@@ -7,9 +7,9 @@
     if($page == '' || $page == 1){
         $begin = 0;
     }else{
-        $begin = ($page*8)-8;
+        $begin = ($page*6)-6;
     }
-	$sql_pro = "SELECT * FROM tbl_danhmuc,tbl_sanpham WHERE tbl_sanpham.id_danhmuc = tbl_danhmuc.id_danhmuc ORDER BY tbl_sanpham.id_sanpham  DESC LIMIT $begin,8";
+	$sql_pro = "SELECT * FROM tbl_danhmuc,tbl_sanpham WHERE tbl_sanpham.id_danhmuc = tbl_danhmuc.id_danhmuc ORDER BY tbl_sanpham.id_sanpham  DESC LIMIT $begin,6";
     $query_pro = mysqli_query($mysqli,$sql_pro);
 			//get ten danh muc 
     //  $query_cate = mysqli_query($mysqli,$sql_cate);
@@ -71,7 +71,7 @@
         <?php
         $sql_trang = mysqli_query($mysqli,"SELECT * FROM tbl_sanpham");
         $row_count = mysqli_num_rows($sql_trang);
-        $trang = ceil($row_count/8); 
+        $trang = ceil($row_count/6); 
         ?>
         <p style="padding-left: 50px;">Trang hiện tại : <?php echo $page ?>/ <?php echo $trang ?> </p>
 
