@@ -8,6 +8,7 @@
 	$cart_query = mysqli_query($mysqli,$insert_cart);
 	if($cart_query){    
 		//them gio hang chi tiet
+		//Them de xem khac gi voi commit truoc
 		foreach($_SESSION['cart'] as $key => $value){
 			$id_sanpham = $value['id'];
 			$soluong = $value['soluong'];
