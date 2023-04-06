@@ -3,7 +3,7 @@
     if(isset($_POST['timkiem'])){
        $tukhoa = $_POST['tukhoa'];
     }
-    // $sql_pro = "SELECT * FROM tbl_sanpham,tbl_danhmuc WHERE tbl_sanpham.id_danhmuc = tbl_danhmuc.id_danhmuc AND tbl_sanpham.tensanpham LIKE '%".$tukhoa."%' ";
+   
     $sql_pro = "SELECT * FROM `tbl_sanpham` AS a, `tbl_danhmuc` AS b WHERE (a.id_danhmuc = b.id_danhmuc AND b.tendanhmuc LIKE '%".$tukhoa."%') OR (a.tensanpham LIKE '%".$tukhoa."%' AND a.id_danhmuc = b.id_danhmuc); ";
 
     $query_pro = mysqli_query($mysqli,$sql_pro);
@@ -16,7 +16,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>PhoneEcommerce</title>
+    <title>T-Phone</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -72,19 +72,7 @@ session_start();
     <!-- Navbar End -->
 
 
-    <!-- Page Header Start -->
-    <!-- <div class="container-fluid bg-secondary mb-5">
-        <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 300px">
-            <h1 class="font-weight-semi-bold text-uppercase mb-3">DANH MỤC SẢN PHẨM</h1>
-            <div class="d-inline-flex">
-                <p class="m-0"><a href="index.php">Trang chủ</a></p>
-                <p class="m-0 px-2">-</p>
-                <p class="m-0">Danh mục sản phẩm</p>
-            </div>
-        </div>
-    </div> -->
-    <!-- Page Header End -->
-
+   
 
     <!-- Shop Start -->
     <div class="container-fluid pt-5">

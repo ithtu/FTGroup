@@ -80,15 +80,11 @@
                                             placeholder="Mật khẩu "name="matkhau">
                                     </div>
                                     <input name="dangnhap" type="submit" class="btn btn-google btn-user btn-block" value="Đăng nhập">
-                                    <!-- <a name="dangky" class="btn btn-google btn-user btn-block">
-                                        Đăng ký
-                                    </a> -->
+                                  
 
                                 </form>
                                 <hr>
-                                <div class="text-center">
-                                    <a class="small" href="#">Quên mật khẩu</a>
-                                </div>
+                                
                                 <div class="text-center">
                                     <a class="small" href="dangky.php">Đăng ký</a>
                                 </div>

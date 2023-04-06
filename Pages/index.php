@@ -34,7 +34,7 @@
         include("navbar.php");
         
         include("product.php");
-        include("featured.php");
+        // include("featured.php");
         include("footer.php");
     ?>
 
