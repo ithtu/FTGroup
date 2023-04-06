@@ -84,9 +84,7 @@
 
                                 </form>
                                 <hr>
-                                <div class="text-center">
-                                    <a class="small" href="#">Quên mật khẩu</a>
-                                </div>
+                                
                                 <div class="text-center">
                                     <a class="small" href="dangky.php">Đăng ký</a>
                                 </div>
