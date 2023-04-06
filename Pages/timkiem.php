@@ -3,7 +3,7 @@
     if(isset($_POST['timkiem'])){
        $tukhoa = $_POST['tukhoa'];
     }
-    // $sql_pro = "SELECT * FROM tbl_sanpham,tbl_danhmuc WHERE tbl_sanpham.id_danhmuc = tbl_danhmuc.id_danhmuc AND tbl_sanpham.tensanpham LIKE '%".$tukhoa."%' ";
+   
     $sql_pro = "SELECT * FROM `tbl_sanpham` AS a, `tbl_danhmuc` AS b WHERE (a.id_danhmuc = b.id_danhmuc AND b.tendanhmuc LIKE '%".$tukhoa."%') OR (a.tensanpham LIKE '%".$tukhoa."%' AND a.id_danhmuc = b.id_danhmuc); ";
 
     $query_pro = mysqli_query($mysqli,$sql_pro);
