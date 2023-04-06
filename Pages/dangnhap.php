@@ -80,9 +80,7 @@
                                             placeholder="Mật khẩu "name="matkhau">
                                     </div>
                                     <input name="dangnhap" type="submit" class="btn btn-google btn-user btn-block" value="Đăng nhập">
-                                    <!-- <a name="dangky" class="btn btn-google btn-user btn-block">
-                                        Đăng ký
-                                    </a> -->
+                                  
 
                                 </form>
                                 <hr>

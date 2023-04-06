@@ -20,6 +20,7 @@
         }
     }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -88,11 +89,8 @@
                                         <input type="password" class="form-control form-control-user"
                                             id="exampleInputPassword" placeholder="Mật khẩu"name="matkhau">
                                         
-                                        <!-- <div class="col-sm-6">
-                                            <input type="password" class="form-control form-control-user"
-                                                id="exampleRepeatPassword" placeholder="Nhập lại mật khẩu"name="">
-                                        </div>
- -->                                </div>
+                                        
+                               </div>
                                     <input name="dangky" type="submit" class="btn btn-google btn-user btn-block" value="Đăng ký">
                                     <!-- <a name="dangky" class="btn btn-google btn-user btn-block">
                                         Đăng ký
