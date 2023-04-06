@@ -56,7 +56,7 @@
             }
             ul.list_trang li{
                 float: left;
-                padding: 5px 13px;
+                padding: 5px 12px;
                 margin: 10px;
                 background-color: burlywood;
             }
